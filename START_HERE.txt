@@ -1,0 +1,98 @@
+NIGHT SHIFT / PRODUCTION CONTROL
+PASS TWO · VERSION 0.2
+
+START
+Extract the entire ZIP into a permanent folder. Open index.html in a modern
+browser. All files must stay together. No installation, account or network
+connection is required.
+
+UPGRADING FROM PASS ONE
+1. Open your old app and click Backup. Keep the downloaded JSON.
+2. Extract this version into its own folder and open index.html.
+3. Click Restore and choose the pass-one JSON. Review the preview and confirm.
+4. The app adds new tasks/records while preserving your existing notes, people,
+   custom quests, dates and progress. Expanded readiness gates that were Done
+   are flagged for review. New audit tasks start open.
+5. Download a fresh backup from this version. Do not restore it into pass one.
+If you replace the app files at their original path, browser storage may be
+retained, but a backup is still necessary. Local file storage is browser-dependent.
+
+PASS TWO FEATURES
+107 initial quests: 80 master-plan tasks, a dedicated DP quest, 20 audit tasks,
+and six date-linked shooting-readiness quests.
+Every quest has an editable intro, definition of done, notes, deadline,
+checklist and dependencies. Selected complex original quests have new checklists.
+Completed tasks from pass one are not silently cleared to add these checklists.
+
+Shoot days: proposed dates, location/access, scene assignment, productive-hour
+capacity, additional reserve, people, role, call time, and date-specific availability.
+Day editing can reassign scenes from another day; the old day is also reopened
+for review. Moving a date resets availability/access and shifts linked quest dates.
+You can leave dates unknown. Nothing invents availability or confirmed bookings.
+
+Scene register: all 14 scenes, cast, time estimates, requirements, shoot assignment
+and footage status. Telescope exteriors intentionally have no shoot day.
+
+Production Book: people, locations, equipment, props and VFX sequence records.
+Props/VFX link to scenes using IDs S1-S14. Add individual shot records as coverage
+becomes concrete; seeded VFX records are sequence-level placeholders.
+
+Quest links: a shoot-day-relative deadline, an optional full-day readiness gate,
+a required location/equipment, and reference links to scenes and budget lines.
+Required links affect completion. Reference links do not assert completion.
+
+Budget: cash versus in-kind; separate estimated, committed and actual values.
+Blank = unknown, not zero. Exposure takes the largest value for each cash line,
+so commitment and spend are not counted twice. A EUR 1,500 illustrative envelope
+is seeded; fees, venue/equipment and accommodation remain unpriced.
+
+Timeline: live quest targets, shoot days, equipment collection/return dates,
+and dated prop/VFX records, plus a section for unscheduled quests/days.
+Enter asset dates as YYYY-MM-DD. Open-work and all-work views are available.
+A warning appears if a prerequisite's target is later than its dependent quest.
+
+DEADLINE COLOURS
+Relative to your computer's local date:
+Green: more than 14 days. Yellow: 8-14. Orange: 3-7. Red: 2 or fewer, including
+past-due work. Text labels explain every colour. Completed/excluded tasks are
+neutral. Status (blocked/waiting/review) remains separate from urgency.
+Colours refresh after changes/navigation and at the next local day when idle.
+
+READINESS
+Director, DoP and Sound are core role checks. Use those exact labels in a day's
+comma-separated role field. Add the scene's character names for cast assignments.
+Other crew roles are supported; quest X20 covers the full responsibility audit.
+A confirmed day needs dated availability, role commitments, call times, location,
+access, assigned scenes, sufficient productive hours and confirmed equipment.
+Conflicts are flagged if a person is assigned to two active days on the same date.
+Set-hour estimates exclude meals, general setup, moves and wrap. The AD must still
+review actual working hours, logistics and setup time. This is a planning aid.
+
+SAVING
+Forms commit when you press Save. The top bar reports browser-save status.
+Keep regular portable JSON backups, especially before moving folders or upgrading.
+Use one tab at a time. Detected external changes pause editing rather than merge.
+Undo covers the last 30 changes in the current session. Restore validates data,
+asks for confirmation and downloads a recovery copy before replacing the project.
+Check that downloads actually complete. Backups contain entered contact details.
+
+AUDIT ADDITIONS
+Academic deliverables, asset/music/participant permissions, AI documentation,
+location emergency arrangements, costume comfort, proven backup recovery,
+crew expense terms, dietary/eating needs, continuity, room noise, essential
+coverage, overnight storage, returns/expenses, credits, subtitles, submission
+playback, presentation preparation, release/excerpt approval and crew ownership.
+These expose decisions to confirm; they do not claim legal or institutional approval.
+
+VALIDATION
+Logic tests passed for seed integrity, dependency cycles, schema-1 migration,
+retained user data, linked deadline shifts, the day-edit handler, availability
+reset, readiness checks, capacity, record links, unknown dates, budget math,
+backup roundtrip, every view/editor and the asset timeline.
+Browser layout and native browser file/download interactions remain unverified
+in this build environment. Do a small save/reload/backup/restore trial locally
+before entering substantial new information.
+
+PASS THREE
+Call sheets, document snapshots, PDF/print exports and final interface checks.
+This build does not issue or send documents and does not contact crew or venues.
